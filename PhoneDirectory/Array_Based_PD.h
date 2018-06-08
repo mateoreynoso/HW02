@@ -56,9 +56,18 @@ private:
 	class Directory_Entry /* Exercise 1.6: Please complete the definition of the Directory_Entry class here. - Ed/Kent */
 	{
 	public:
-	
-	private:
+		// Constructor
+		Directory_Entry() {}
+		Directory_Entry(string name, string number);
 
+		//Accessors and Mutators
+		string get_name() const { return name; }
+		string get_number() const { return number; }
+		void set_number(const string& new_number) { number = new_number; }
+
+	private:
+		std::string name;
+		std::string number;
 	};
 
 	// Private Functions
